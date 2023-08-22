@@ -2278,11 +2278,20 @@
       "new-annbar": {
         "type": "new-annbar",
         "blocks": {
+          "5c189d27-0408-4f68-bf6f-d55c974a94f5": {
+            "type": "testimonial",
+            "settings": {
+              "Offer": "RAKHI SPECIAL : Get glam with exclusive kits with Blue Heaven",
+              "image": "shopify:\/\/shop_images\/offer-icon.png",
+              "coupon": "",
+              "linkurl": "shopify:\/\/pages\/blue-heaven-x-bombae"
+            }
+          },
           "f5fe7f08-a473-4a01-a8e7-a9b1869a4ccf": {
             "type": "testimonial",
             "disabled": true,
             "settings": {
-              "Offer": "Weekend Offer: Get 2 products for Rs.199",
+              "Offer": "RAKHI SPECIAL : Get glam with exclusive kits with Blue Heaven",
               "image": "shopify:\/\/shop_images\/free-gifts_8f89729e-f25a-44b9-bd04-03ed82a2cfac.png",
               "coupon": "GLAMFEST",
               "linkurl": "shopify:\/\/collections\/glam-up-fest"
@@ -2295,16 +2304,6 @@
               "image": "shopify:\/\/shop_images\/Rollplay-icon.png",
               "coupon": "MYGIFT",
               "linkurl": "shopify:\/\/products\/rollplay-body-razor"
-            }
-          },
-          "5c189d27-0408-4f68-bf6f-d55c974a94f5": {
-            "type": "testimonial",
-            "disabled": true,
-            "settings": {
-              "Offer": "Get 3 products at INR 599!",
-              "image": "shopify:\/\/shop_images\/offer-icon.png",
-              "coupon": "SUPER599",
-              "linkurl": "shopify:\/\/collections\/super-saver-sale"
             }
           },
           "0ad8efb3-88ac-4f9c-ac0b-710106468360": {
@@ -2376,9 +2375,9 @@
           }
         },
         "block_order": [
+          "5c189d27-0408-4f68-bf6f-d55c974a94f5",
           "f5fe7f08-a473-4a01-a8e7-a9b1869a4ccf",
           "fad57716-5b37-4564-9929-efab5db6a2f1",
-          "5c189d27-0408-4f68-bf6f-d55c974a94f5",
           "0ad8efb3-88ac-4f9c-ac0b-710106468360",
           "c9ce9867-242a-4c24-a9c6-e66871a58bf9",
           "67790948-2d46-4a76-9a18-1e2b1894e876",
@@ -2388,7 +2387,7 @@
           "03ca440b-be2f-4901-83aa-7866a8bc55d4"
         ],
         "settings": {
-          "text": "Prices slashed for a limited time !"
+          "text": "RAKHI SPECIAL : Get glam with exclusive kits with Blue Heaven"
         }
       },
       "careers": {
