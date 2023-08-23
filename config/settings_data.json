@@ -622,6 +622,7 @@
           },
           "9ab70030-3d24-4100-b67e-8684e2285f66": {
             "type": "dropdown",
+            "disabled": true,
             "settings": {
               "title": "the bae way",
               "url": "",
