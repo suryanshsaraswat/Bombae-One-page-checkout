@@ -636,6 +636,22 @@
               "lazy_mn": true,
               "pos": "right"
             }
+          },
+          "bd03e0b8-53e6-41a8-a4a7-7e49a96f923d": {
+            "type": "dropdown",
+            "settings": {
+              "title": "the bae way",
+              "url": "",
+              "open_link": "_self",
+              "menu": "bae-way",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "",
+              "lazy_mn": true,
+              "pos": "right"
+            }
           }
         },
         "block_order": [
@@ -651,7 +667,8 @@
           "1585641843539",
           "ca476bb8-f088-4d0d-8916-9fea6e2eee9f",
           "999bd88d-42ae-4c42-ae9e-6b40ffb40e5a",
-          "9ab70030-3d24-4100-b67e-8684e2285f66"
+          "9ab70030-3d24-4100-b67e-8684e2285f66",
+          "bd03e0b8-53e6-41a8-a4a7-7e49a96f923d"
         ],
         "custom_css": [
 
