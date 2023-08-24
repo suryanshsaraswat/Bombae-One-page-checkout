@@ -580,6 +580,7 @@
           },
           "1585641843539": {
             "type": "dropdown",
+            "disabled": true,
             "settings": {
               "title": "#SmoothAFfairs",
               "url": "#",
@@ -638,7 +639,6 @@
           },
           "bd03e0b8-53e6-41a8-a4a7-7e49a96f923d": {
             "type": "dropdown",
-            "disabled": true,
             "settings": {
               "title": "the bae way",
               "url": "",
@@ -649,7 +649,7 @@
               "cl": "#ec0101",
               "lb": "",
               "lb_cl": "",
-              "lazy_mn": true,
+              "lazy_mn": false,
               "pos": "right"
             }
           },
