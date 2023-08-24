@@ -2647,6 +2647,18 @@
         ],
         "settings": {
         }
+      },
+      "custom-liquid": {
+        "type": "custom-liquid",
+        "settings": {
+          "custom_liquid": "{% render 'SEO-CONTENT' %}",
+          "layout": "nt_full",
+          "cl_bg": "#fff",
+          "mg": "",
+          "pd": "",
+          "mg_mb": "",
+          "pd_mb": ""
+        }
       }
     },
     "content_for_index": [
