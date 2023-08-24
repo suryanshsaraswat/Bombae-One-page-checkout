@@ -182,46 +182,6 @@
     window.gkLogOutUrl = "{{ routes.account_logout_url }}";
     window.gkShopifySessionId = getCookie('_shopify_s');
     window.gkMerchantId = '3mt5u7t4ejl2a88iwu';
-
-    const analyticsEvent = (payload, requestId) => {
-        const timestamp = Date.now();
-        const userAgent = navigator.userAgent;
-        const version = '1';
-        
-        const data = {
-            ...payload,
-            timestamp,
-            requestId: requestId || 'NA',
-            userAgent,
-            version
-        };
-    
-        // axios({
-        //     url: `https://hits.gokwik.co/api/v1/events`,
-        //     method: 'POST',
-        //     data
-        // });
-  
-      fetch('https://hits.gokwik.co/api/v1/events', {
-        method: 'POST',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-      });
-    }
-
-    console.log('lalalalalla===>', window.location.href.split('?'));
-  
-    const adSource = window.location.href.split('?').length > 1 ? window.location.href.split('?')[1] : undefined;
-    analyticsEvent({ 
-      adSource,
-      eventType: 'onGkClick',
-      merchantId: window.gkMerchantId,
-      name: 'gokwik-button-clicked',
-      type: 'event'
-    });
   </script>
   
   <div id="gk-modal" class="gk-modal">
