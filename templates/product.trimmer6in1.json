@@ -138,6 +138,21 @@
         "back_next_pr": true
       }
     },
+    "1692946470c394653d": {
+      "type": "apps",
+      "blocks": {
+        "67d9bc7f-bfd9-45ff-a1e7-65ee256ab0be": {
+          "type": "shopify:\/\/apps\/upsell-cross-sell-selleasy\/blocks\/lb-upsell-fbt-block\/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "67d9bc7f-bfd9-45ff-a1e7-65ee256ab0be"
+      ],
+      "settings": {
+      }
+    },
     "be72c199-4022-4415-b15a-593dcd860f7a": {
       "type": "Aplusbanner",
       "blocks": {
@@ -299,31 +314,16 @@
       ],
       "settings": {
       }
-    },
-    "1692946470c394653d": {
-      "type": "apps",
-      "blocks": {
-        "67d9bc7f-bfd9-45ff-a1e7-65ee256ab0be": {
-          "type": "shopify:\/\/apps\/upsell-cross-sell-selleasy\/blocks\/lb-upsell-fbt-block\/790c1a03-a71f-4bc1-9869-00dad526d3c2",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "67d9bc7f-bfd9-45ff-a1e7-65ee256ab0be"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
     "main",
+    "1692946470c394653d",
     "be72c199-4022-4415-b15a-593dcd860f7a",
     "a8e3d74d-d21d-47e3-8988-418908b09d09",
     "93647f78-5488-4196-a36d-e7019e97f34e",
     "product-description",
     "product-recommendations",
-    "165596399873ce533d",
-    "1692946470c394653d"
+    "165596399873ce533d"
   ]
 }
