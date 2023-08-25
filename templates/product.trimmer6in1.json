@@ -102,6 +102,7 @@
         },
         "75b0b56c-0e2f-44d7-9f87-27b502a09a76": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "{%- render 'pincode-checker' -%}"
           }
