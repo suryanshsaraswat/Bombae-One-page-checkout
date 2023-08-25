@@ -337,7 +337,7 @@
         "hide_bgimg": false,
         "mg": "-30px,,-30px,",
         "pd": "10px,50px,0px,50px",
-        "mg_mb": "",
+        "mg_mb": "10px,10px",
         "pd_mb": "10px,10px,10px,10px"
       }
     },
