@@ -57,19 +57,19 @@ a#authenticator_product {
   </div>
   <div class="rewards-form">
     <div class="form-items">
-      <div class="name">
+      <div class="child-form name">
         <label for="" class="name">NAME</label>
         <input type="text" class="name" placeholder="Enter your name"></input>
       </div>
-      <div class="email">
+      <div class="child-form email">
         <label for="" class="email">EMAIL</label>
         <input type="email" class="email" placeholder="ENTER EMAIL"></input>
       </div>
-      <div class="phone">
+      <div class="child-form phone">
         <label for="" class="phone">PHONE</label>
         <input type="tel" class="telephone" placeholder="ENTER PHONE"></input>
       </div>
-      <div class="product-selection">
+      <div class="child-form product-selection">
         <label for="" class="prod-selection">Select your product</label>
          <select name="product_dropdown" id="product_dropdown">
           {% for product in collections.all.products %}
@@ -80,7 +80,7 @@ a#authenticator_product {
             {% endfor %}
             </select>
       </div>
-      <div class="channel-selection">
+      <div class="child-form channel-selection">
         <label for="" class="channel-select">SELECT CHANNEL</label>
         <select id="channel-dropdown" placeholder = "select ypur channel">
           <option value="shopify">D2C</option>
@@ -95,7 +95,7 @@ a#authenticator_product {
           <!-- Add more options as needed -->
           </select>
       </div>
-      <div class="authenticate">
+      <div class="child-form authenticate">
         <a id="authenticator_product" href="#" target="_blank">Authenticate your product</a>
       </div>
     </div>
