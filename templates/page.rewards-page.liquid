@@ -31,6 +31,46 @@
     width: 300px;
     margin: 0 auto;
 }
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-selected {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.selected-image {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.dropdown-options {
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.dropdown-options li {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.option-image {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
 </style>
 <div class="main-rewards-container">
   <div class="rewards-cont">
@@ -58,15 +98,50 @@
       </div>
       <div class="product-selection">
         <label for="" class="prod-selection">Select your product</label>
-        <select name="product_dropdown" id="product_dropdown">
+        {% comment %} <select name="product_dropdown" id="product_dropdown">
           {% for product in collections.all.products %}
             <option value="{{ product.id }}">
               <img src="{{ product.featured_image | img_url:'400x' }}" alt="{{ product.title }}" width="50">
               {{ product.title }}
               </option>
             {% endfor %}
-            </select>
+            </select> {% endcomment %}
+            <div class="custom-dropdown">
+              <div class="dropdown-selected">
+                <img src="#" alt="Selected Product" class="selected-image">
+                <span class="selected-title">Select a product</span>
+                </div>
+                <ul class="dropdown-options">
+                  {% for product in collections.all.products %}
+                    <li data-product-id="{{ product.id }}">
+                      <img src="{{ product.featured_image | img_url: 'thumb' }}" alt="{{ product.title }}" class="option-image">
+                      {{ product.title }}
+                      </li>
+                    {% endfor %}
+                     </ul>
+                     <input type="hidden" name="selected_product_id" id="selected_product_id">
+                     </div>
       </div>
     </div>
   </div>
 </div>
+<script>
+  $(document).ready(function() {
+  $('.dropdown-selected').click(function() {
+    $('.dropdown-options').toggle();
+  });
+
+  $('.dropdown-options li').click(function() {
+    var productId = $(this).data('product-id');
+    var productTitle = $(this).text();
+    var productImage = $(this).find('.option-image').attr('src');
+
+    $('.selected-title').text(productTitle);
+    $('.selected-image').attr('src', productImage);
+    $('#selected_product_id').val(productId);
+
+    $('.dropdown-options').hide();
+  });
+});
+
+</script>
