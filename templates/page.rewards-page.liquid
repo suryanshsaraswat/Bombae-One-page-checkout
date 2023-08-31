@@ -83,9 +83,37 @@
           <!-- Add more options as needed -->
           </select>
       </div>
+      <div class="authenticate">
+        <a id="authenticator_product" href="#" target="_blank">Authenticate your product</a>
+      </div>
     </div>
   </div>
 </div>
 <script>
+  // Get references to the dropdown and button
+  const dropdown = document.getElementById('channel-dropdown');
+  const dynamicButton = document.getElementById('authenticator_product');
 
+  // Define the links corresponding to each dropdown option
+  const linkMap = {
+      shopify: 'https://mybombae.in/',
+      amazon: 'https://mybombae.in/',
+      flipkart:'https://mybombae.in/',
+      nykaa:'https://mybombae.in/',
+      blinkit:'https://mybombae.in/',
+      zepto:'https://mybombae.in/',
+      instamart:'https://mybombae.in/',
+      myntra:'https://mybombae.in/',
+      meesho:'https://mybombae.in/'
+      // Add more links as needed
+  };
+
+  // Add an event listener to the dropdown
+  dropdown.addEventListener('change', function() {
+      const selectedValue = dropdown.value;
+      if (linkMap[selectedValue]) {
+          dynamicButton.href = linkMap[selectedValue];
+      }
+  });
+</script>
 </script>
