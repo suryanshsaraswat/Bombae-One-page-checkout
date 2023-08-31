@@ -102,6 +102,10 @@ label.child-labels {
           <!-- Add more options as needed -->
           </select>
       </div>
+      <div class="child-form shop-order-id" id="order_input">
+        <label for="" class="child-labels shopify-order_id">ENTER LAST 4 DIGITS OF ORDER ID</label>
+        <input type="number" max_length="4" class="shopify-id"></input>
+      </div>
       <div class="child-form authenticate">
         <a id="authenticator_product" href="#" target="_blank">Authenticate your product</a>
       </div>
@@ -112,10 +116,10 @@ label.child-labels {
   // Get references to the dropdown and button
   const dropdown = document.getElementById('channel-dropdown');
   const dynamicButton = document.getElementById('authenticator_product');
+  const shopifyInput = document.getElementById('order_input');
 
   // Define the links corresponding to each dropdown option
   const linkMap = {
-      shopify: 'https://mybombae.in/',
       amazon: 'https://www.amazon.in/gp/css/order-history?ref_=nav_orders_first',
       flipkart:'https://www.flipkart.com/account/orders?link=home_orders',
       nykaa:'https://www.nykaa.com/sales/order/history/v2?ptype=myOrder',
@@ -126,7 +130,6 @@ label.child-labels {
       meesho:'https://www.meesho.com/orders'
       // Add more links as needed
   };
-
   // Add an event listener to the dropdown
   dropdown.addEventListener('input', function() {
         const selectedValue = dropdown.value;
@@ -134,5 +137,15 @@ label.child-labels {
             dynamicButton.href = linkMap[selectedValue];
         }
     });
+    dropdown.addEventListener('input',function(){
+      if(dropdwon.value === 'shopify'){
+        shopifyInput.style.display == 'block';
+      }
+      else {
+        shopifyInput.style.display == "none";
+      }
+
+
+    })
 </script>
 </script>
