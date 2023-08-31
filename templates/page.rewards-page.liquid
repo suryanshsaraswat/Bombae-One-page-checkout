@@ -67,15 +67,15 @@ label.child-labels {
     <div class="form-items">
       <div class="child-form name">
         <label for="" class="child-labels name">NAME</label>
-        <input type="text" class="name" placeholder="Enter your name"></input>
+        <input type="text" class="name" placeholder="Enter your name" id="name"></input>
       </div>
       <div class="child-form email">
         <label for="" class="child-labels email">EMAIL</label>
-        <input type="email" class="email" placeholder="ENTER EMAIL"></input>
+        <input type="email" class="email" placeholder="ENTER EMAIL" id="email-id"></input>
       </div>
       <div class="child-form phone">
         <label for="" class="child-labels phone">PHONE</label>
-        <input type="tel" class="telephone" placeholder="ENTER PHONE"></input>
+        <input type="tel" class="telephone" placeholder="ENTER PHONE" id="phone"></input>
       </div>
       <div class="child-form product-selection">
         <label for="" class="child-labels prod-selection">Select your product</label>
@@ -90,7 +90,7 @@ label.child-labels {
       </div>
       <div class="child-form channel-selection">
         <label for="" class="child-labels channel-select">SELECT CHANNEL</label>
-        <select id="channel-dropdown" placeholder = "select ypur channel">
+        <select id="channel-dropdown" placeholder = "select ypur channel" id="channel">
           <option value="" selected>Select a Channel</option>
           <option value="shopify">D2C</option>
           <option value="amazon">Amazon</option>
@@ -150,4 +150,66 @@ label.child-labels {
 
     })
 </script>
-</script>
+<Script>
+  const fetch = require('node-fetch');
+const shopifyDomain = 'bsc-women.myshopify.com';
+const apiKey = 'e7940d64f8fed496dbe6c5fbf4b7e5fc';
+const apiPassword = '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';
+//https://e7940d64f8fed496dbe6c5fbf4b7e5fc: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@bsc-women.myshopify.com/admin/api/2021-10/customers.json
+// Function to create a new customer in Shopify
+async function createShopifyCustomer(customerData) {
+  const response = await fetch(`https://${shopifyDomain}/admin/api/2023-07/customers.json`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'Basic ' + Buffer.from(`${apiKey}:${apiPassword}`).toString('base64'),
+    },
+    body: JSON.stringify({
+      customer: customerData,
+    }),
+  });
+  return response;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const createCustomerButton = document.getElementById('authenticator_product');
+
+  createCustomerButton.addEventListener('click', async (event) => {
+    event.preventDefault();
+
+    const firstName = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const productBought = document.getElementById('product').value;
+    const channelBoughtFrom = document.getElementById('channel').value;
+
+    const customerData = {
+      first_name: firstName,
+      email: email,
+      phone: phone,
+      product_bought: productBought,
+    };
+
+    const response = await createShopifyCustomer(customerData);
+
+    if (response.status === 201) {
+      const responseData = await response.json();
+      const customerId = responseData.customer.id;
+      const tag = channelBoughtFrom;
+
+      const tagResponse = await addTagToCustomer(customerId, tag);
+
+      if (tagResponse.status === 200) {
+        console.log('New customer created on Shopify.');
+        console.log(`Tag "${tag}" added to the customer.`);
+      } else {
+        console.log('Failed to add tag to the customer.');
+        console.log('Tag Response:', await tagResponse.text());
+      }
+    } else {
+      console.log('Failed to create customer on Shopify.');
+      console.log('Response:', await response.text());
+    }
+  });
+});
+</Script>
