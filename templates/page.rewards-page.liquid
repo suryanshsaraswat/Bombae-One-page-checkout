@@ -174,7 +174,7 @@ label.child-labels {
 
     // Create customer using Shopify REST API
     $.ajax({
-      url: `https://bsc-women.myshopify.com/admin/api/2023-07/customers.json`,
+      url: `https://bsc-women.myshopify.com/admin/api/2021-10/customers.json`,
       type: 'POST',
       dataType: 'json',
       contentType: 'application/json',
@@ -198,7 +198,7 @@ label.child-labels {
 
   function addTagToCustomer(customerId, tag) {
     $.ajax({
-      url: `https://bsc-women.myshopify.com/admin/api/2023-07/customers/${customerId}.json`,
+      url: `https://bsc-women.myshopify.com/admin/api/2021-10/customers/${customerId}.json`,
       type: 'PUT',
       dataType: 'json',
       contentType: 'application/json',
