@@ -50,7 +50,21 @@
       </div>
       <div class="email">
         <label for="" class="email">EMAIL</label>
-        <input type="text" class="email"></input>
+        <input type="email" class="email" placeholder="ENTER EMAIL"></input>
+      </div>
+      <div class="phone">
+        <label for="" class="phone"></label>
+        <input type="tel" class="telephone" placeholder="ENTER PHONE"></input>
+      </div>
+      <div class="product-selection">
+        <select name="product_dropdown" id="product_dropdown">
+          {% for product in collections.all.products %}
+            <option value="{{ product.id }}">
+              <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}" width="50">
+              {{ product.title }}
+              </option>
+            {% endfor %}
+            </select>
       </div>
     </div>
   </div>
