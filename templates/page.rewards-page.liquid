@@ -61,7 +61,7 @@
         <select name="product_dropdown" id="product_dropdown">
           {% for product in collections.all.products %}
             <option value="{{ product.id }}">
-              <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}" width="50">
+              <img src="{{ product.featured_image | img_url: '400x' }}" alt="{{ product.title }}" width="50">
               {{ product.title }}
               </option>
             {% endfor %}
