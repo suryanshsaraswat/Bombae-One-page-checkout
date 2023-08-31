@@ -53,10 +53,11 @@
         <input type="email" class="email" placeholder="ENTER EMAIL"></input>
       </div>
       <div class="phone">
-        <label for="" class="phone"></label>
+        <label for="" class="phone">PHONE</label>
         <input type="tel" class="telephone" placeholder="ENTER PHONE"></input>
       </div>
       <div class="product-selection">
+        <label for="" class="prod-selection">Select your product</label>
         <select name="product_dropdown" id="product_dropdown">
           {% for product in collections.all.products %}
             <option value="{{ product.id }}">
