@@ -5,6 +5,7 @@
       "blocks": {
         "template--15596438323395__eef4dd35-1176-414a-8b24-c2bf1f333068-16684877588eeccc2c-0": {
           "type": "img",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/desktop-banner_9c2eb8e5-aad2-4ba1-932a-cb505e7ed72f.jpg",
             "image_mb": "shopify:\/\/shop_images\/Mobile-banner_76a31ce0-8c0d-45bd-88ec-4ef9469ad4b6.jpg",

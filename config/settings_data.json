@@ -2335,6 +2335,7 @@
         "blocks": {
           "5c189d27-0408-4f68-bf6f-d55c974a94f5": {
             "type": "testimonial",
+            "disabled": true,
             "settings": {
               "Offer": "RAKHI SPECIAL : Get glam with exclusive kits with Blue Heaven",
               "image": "shopify:\/\/shop_images\/offer-icon.png",
@@ -2442,7 +2443,7 @@
           "03ca440b-be2f-4901-83aa-7866a8bc55d4"
         ],
         "settings": {
-          "text": "RAKHI SPECIAL : Get glam with exclusive kits with Blue Heaven"
+          "text": "PRICES SLASHED FOR LIMITED TIME"
         }
       },
       "careers": {
