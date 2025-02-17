@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "1661494715d1b3bf77": {
@@ -6,8 +15,8 @@
         "7bc7441c-19a0-448f-a4fa-f922db22b8f9": {
           "type": "img",
           "settings": {
-            "image": "shopify:\/\/shop_images\/website-banner-trimmer-desktop.jpg",
-            "image_mb": "shopify:\/\/shop_images\/website-banner-trimmer-mobile.jpg",
+            "image": "shopify://shop_images/website-banner-trimmer-desktop.jpg",
+            "image_mb": "shopify://shop_images/website-banner-trimmer-mobile.jpg",
             "pos_img": "center center",
             "cl_img": "",
             "link_img1": "",
@@ -38,8 +47,8 @@
         "16614947150de1301d-0": {
           "type": "img",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Copy_of_fuzz-off-desktop-banner.jpg",
-            "image_mb": "shopify:\/\/shop_images\/Copy_of_fuzz-off-mobile-banner.jpg",
+            "image": "shopify://shop_images/Copy_of_fuzz-off-desktop-banner.jpg",
+            "image_mb": "shopify://shop_images/Copy_of_fuzz-off-mobile-banner.jpg",
             "pos_img": "center center",
             "cl_img": "",
             "link_img1": "#",
@@ -103,8 +112,7 @@
       "blocks": {
         "89b1a94e-2cf5-4075-a6af-0969fbaeae2c": {
           "type": "1",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -112,7 +120,7 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/JD_0699_1.jpg",
+        "image": "shopify://shop_images/JD_0699_1.jpg",
         "parallax": false,
         "color": "#000000",
         "overlay": 54,
@@ -127,8 +135,7 @@
     "main": {
       "type": "main-page",
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     },
     "16614198409a412140": {
       "type": "trimmer-LP",
@@ -136,9 +143,9 @@
         "89a2f408-a51f-4e17-b2df-0a71795e418b": {
           "type": "Product",
           "settings": {
-            "featured_product": "fuzzoff-sensitive-areas-trimmer",
-            "featured_image": "shopify:\/\/shop_images\/Copy_of_trimmer-for-landing-page-4-in-1.jpg",
-            "featured_image2": "shopify:\/\/shop_images\/Hover-copy2_2.jpg",
+            "featured_product": "sensitive-areas-trimmer-fuzzoff",
+            "featured_image": "shopify://shop_images/Copy_of_trimmer-for-landing-page-4-in-1.jpg",
+            "featured_image2": "shopify://shop_images/Hover-copy2_2.jpg",
             "offersss": "Free Face Sheet Mask (Pack of 2)"
           }
         },
@@ -146,8 +153,8 @@
           "type": "Product",
           "settings": {
             "featured_product": "eyebrow-and-face-trimmer-magica",
-            "featured_image": "shopify:\/\/shop_images\/Copy_of_trimmer-for-landing-page-6-in-1_1.jpg",
-            "featured_image2": "shopify:\/\/shop_images\/Hover-copy_1.png",
+            "featured_image": "shopify://shop_images/Copy_of_trimmer-for-landing-page-6-in-1_1.jpg",
+            "featured_image2": "shopify://shop_images/Hover-copy_1.png",
             "offersss": "Free Face Sheet Mask (Pack of 1)"
           }
         }
@@ -156,33 +163,27 @@
         "89a2f408-a51f-4e17-b2df-0a71795e418b",
         "5ff87e3d-c081-4288-bc85-ad4d2c673006"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "736168b8-31be-4f75-85db-dbaa18dfd0d4": {
       "type": "fuzzoff-banner",
-      "settings": {
-      }
+      "settings": {}
     },
     "16636800968b01a009": {
       "type": "USPsliderr",
-      "settings": {
-      }
+      "settings": {}
     },
     "16636659917e6b287d": {
       "type": "sliderr-trim",
-      "settings": {
-      }
+      "settings": {}
     },
     "1662446661902d1b82": {
       "type": "tabs_trimmer",
-      "settings": {
-      }
+      "settings": {}
     },
     "6a180bbc-022d-42de-8e20-b59447040f5a": {
       "type": "influencerr-testimonials",
-      "settings": {
-      }
+      "settings": {}
     },
     "6bfb6a2f-8124-4425-ac90-5fbdbaf3c6c2": {
       "type": "custom-liquid",
